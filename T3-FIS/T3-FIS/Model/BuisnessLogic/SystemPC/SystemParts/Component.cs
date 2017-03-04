@@ -13,10 +13,10 @@ namespace T3_FIS.Model.Common
         {
         }
         #endregion
-
-        public bool Equals(Component other)
-        {
-            return Name == other.Name && Price == other.Price;
-        }
+        
+        //public bool Equals(Component other)
+        //{
+        //    return Name == other.Name && Price == other.Price;
+        //}
     }
 }

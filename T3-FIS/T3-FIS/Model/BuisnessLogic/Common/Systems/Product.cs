@@ -9,6 +9,7 @@ namespace T3_FIS.Model.Common
     public abstract class Product
     {
         public string Name { get; protected set; }
+        public Guid ProductGuid = new Guid();
         public float Price;
 
         #region Constructors
