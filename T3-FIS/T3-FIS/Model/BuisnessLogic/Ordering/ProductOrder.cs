@@ -22,6 +22,8 @@ namespace T3_FIS.Model.Common
         }
         #endregion
 
+
+
         /// <summary>
         /// Adds a product.
         /// </summary>
