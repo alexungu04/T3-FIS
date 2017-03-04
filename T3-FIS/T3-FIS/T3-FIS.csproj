@@ -51,6 +51,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Common\Component.cs" />
+    <Compile Include="Model\Common\CustomSystemPC.cs" />
+    <Compile Include="Model\Common\Message.cs" />
+    <Compile Include="Model\Common\Product.cs" />
+    <Compile Include="Model\Common\ProductOrder.cs" />
+    <Compile Include="Model\Common\PromotionalPackage.cs" />
+    <Compile Include="Model\Common\SystemPC.cs" />
+    <Compile Include="Model\Common\SystemType.cs" />
+    <Compile Include="Model\Common\Warranty.cs" />
+    <Compile Include="Model\Managers\SystemPCManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -74,6 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\DataBase\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

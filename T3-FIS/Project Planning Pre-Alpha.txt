@@ -1,0 +1,31 @@
+COMPONENTE:
+Nume
+
+COMANDA:
+Data
+Inventar de componente (list <componente>)
+Furnizor
+Status
+Situatie
+Observatii
+
+SISTEME:
+Familie de produse
+
+PACHETE PROMOTIONALE:
+Reducere
+Continut (list<sisteme>)
+
+GARANTIE:
+Componenta 
+
+BD pt fiecare sistem: - Component manager
+Cantitate in inventar
+Cantitate comanda
+Cantitate deja livrata
+
+BD livrari: - Command manager
+
+Grafice
+
+Sisteme separate comenzi speciale
