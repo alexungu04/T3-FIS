@@ -12,8 +12,8 @@ namespace T3_FIS.Model.Common
 
         public Message Details = new Message(MessageType.Unknown, "No Details.");
         public DateTime Date { get; private set; }
-        public bool DeliveryStatus { get; private set; }
-        public bool PaymentStatus { get; private set; }
+        public bool DeliveryStatus { get; set; }
+        public bool PaymentStatus { get; set; }
 
         #region Constructors
         public ProductOrder(DateTime date)

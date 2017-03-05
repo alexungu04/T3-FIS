@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{5AAFEAF3-DA69-4144-AF9C-D649159794B9}"
 	ProjectSection(SolutionItems) = preProject
 		Project Planning Pre-Alpha.txt = Project Planning Pre-Alpha.txt
-		..\..\Documentation\UMLDiagram.mdj = ..\..\Documentation\UMLDiagram.mdj
 	EndProjectSection
 EndProject
 Global

@@ -15,6 +15,11 @@ namespace T3_FIS.Model.Common
         {
             Types.Add(type);
         }
+
+        public SystemType(IEnumerable<string> types)
+        {
+            Types.AddRange(types);
+        }
         #endregion
 
         public void AddSubtype(string type)
@@ -22,7 +27,7 @@ namespace T3_FIS.Model.Common
             Types.Add(type);
         }
 
-        public void AddSubtype(IEnumerable<string> types)
+        public void AddSubtypes(IEnumerable<string> types)
         {
             Types.AddRange(types);
         }

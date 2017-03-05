@@ -8,12 +8,12 @@ namespace T3_FIS.Model.Common
 {
     public class Warranty
     {
-        private DateTime Date;
-        private SystemPC DefectedSystem;
-        private List<Component> DefectedComponents = new List<Component>();
+        public DateTime Date { get; private set; }
+        public SystemPC DefectedSystem { get; private set; }
+        public List<Component> DefectedComponents { get; private set; } = new List<Component>();
 
         #region Constructors
-        public Warranty()
+        public Warranty(DateTime date, SystemPC defectedSystem, IEnumerable<Component> defectedComponents)
         {
 
         }
