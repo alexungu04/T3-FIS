@@ -57,24 +57,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\BuisnessLogic\Common\Systems\Product.cs" />
-    <Compile Include="Model\BuisnessLogic\Common\Utility\Functionality\Constants.cs" />
-    <Compile Include="Model\BuisnessLogic\Common\Utility\UI\Message.cs" />
-    <Compile Include="Model\BuisnessLogic\Common\Utility\UI\Price.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Common\Product.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Common\ISellableProduct.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Components\Peripheral.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Systems\SystemPC.cs" />
+    <Compile Include="Model\BuisnessLogic\Utility\Functionality\Constants.cs" />
+    <Compile Include="Model\BuisnessLogic\Utility\UI\Message.cs" />
+    <Compile Include="Model\BuisnessLogic\Utility\UI\Price.cs" />
     <Compile Include="Model\BuisnessLogic\Ordering\ProductOrder.cs" />
     <Compile Include="Model\BuisnessLogic\Ordering\Warranty.cs" />
-    <Compile Include="Model\BuisnessLogic\SystemPC\CustomSystemPC.cs" />
-    <Compile Include="Model\BuisnessLogic\SystemPC\PromotionalPackage.cs" />
-    <Compile Include="Model\BuisnessLogic\SystemPC\SystemParts\Component.cs" />
-    <Compile Include="Model\BuisnessLogic\SystemPC\SystemPC.cs" />
-    <Compile Include="Model\BuisnessLogic\SystemPC\SystemUtility\SystemType.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\PromotionalPackage.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Components\Component.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Systems\PremadeSystemPC.cs" />
+    <Compile Include="Model\BuisnessLogic\ProductsPC\Common\ProductType.cs" />
+    <Compile Include="Model\Managers\Common\ManagerBase.cs" />
+    <Compile Include="Model\Managers\WarrantyManager.cs" />
+    <Compile Include="Model\Managers\OrderManager.cs" />
     <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Managers\SystemPCManager.cs" />
+    <Compile Include="Model\Managers\ProductManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Model\DataBase\" />
+    <Folder Include="Model\DataBase\DAL\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

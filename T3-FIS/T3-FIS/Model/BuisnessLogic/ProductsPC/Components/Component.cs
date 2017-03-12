@@ -9,13 +9,15 @@ namespace T3_FIS.Model.Common
 {
     public class Component : Product
     {
-        #region Constructors
-        public Component(string name, float price) : base(name, price)
-        {
-        }
+        /// <summary>
+        /// Get the type and subtype of the component.
+        /// </summary>
+        public ProductType Type { get; private set; }
 
-        public Component(string name, Price price) : base(name, price)
+        #region Constructors
+        public Component(string name, ProductType type) : base(name)
         {
+            Type = type;
         }
         #endregion
 

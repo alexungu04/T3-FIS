@@ -10,6 +10,7 @@ namespace T3_FIS.Model.Common
     {
         Info,
         Warning,
+        Success,
         Error,
         Unknown
     }
@@ -19,7 +20,6 @@ namespace T3_FIS.Model.Common
         private string MessageText;
         private List<Message> InnerMessages = new List<Message>();
         private MessageType MsgType;
-        private bool HasInnerMessages => InnerMessages.Count > 0;
 
         /// <summary>
         /// Used to separate messages when in string form.
@@ -27,6 +27,9 @@ namespace T3_FIS.Model.Common
         public static string MessageDelimiter { private get; set; } = " | ";
 
         #region Constructors
+        /// <summary>
+        /// Used to describe a single message or multiple messages defined by the message's text and its type.
+        /// </summary>
         public Message(MessageType type, string messageText)
         {
             MsgType = type;

@@ -10,7 +10,14 @@ namespace T3_FIS.Model.BuisnessLogic.Common
 {
     public static class Constants
     {
+        /// <summary>
+        /// Returns the application directory path as a string.
+        /// </summary>
         public static string ApplicationDirectoryPath = Application.StartupPath;
-        public static string DataBaseDirectoryPath = Path.Combine(Application.StartupPath, "data", "dataBase");
+
+        /// <summary>
+        /// Returns the connection string used for the application's database.
+        /// </summary>
+        public static string DataBaseConnectionString; /* = TBD */
     }
 }
