@@ -46,6 +46,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,15 +74,33 @@
     <Compile Include="Model\Managers\Common\ManagerBase.cs" />
     <Compile Include="Model\Managers\WarrantyManager.cs" />
     <Compile Include="Model\Managers\OrderManager.cs" />
+    <Compile Include="Model\Managers\ProductManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AdaugareComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdaugareComanda.Designer.cs">
+      <DependentUpon>AdaugareComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdaugareGarantie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdaugareGarantie.Designer.cs">
+      <DependentUpon>AdaugareGarantie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdaugareProdus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdaugareProdus.Designer.cs">
+      <DependentUpon>AdaugareProdus.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Managers\ProductManager.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +110,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\AdaugareComanda.resx">
+      <DependentUpon>AdaugareComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdaugareGarantie.resx">
+      <DependentUpon>AdaugareGarantie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdaugareProdus.resx">
+      <DependentUpon>AdaugareProdus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
